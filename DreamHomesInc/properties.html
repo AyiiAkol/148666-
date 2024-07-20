@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Supreme Homes Inc.</h1>
+            <nav>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="rentals.html">For Rent</a></li>
+                <li><a href="sales.html">For Sale</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+                <li><a href="signin.html">Sign in</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="products">
+            <div class="container">
+                <h2>Homes Available</h2>
+                <div class="product-table">
+                    <table cellpadding="10px" cellspacing="5" border="1">
+                        <thead>
+                            <tr>
+                                <th>Home</th>
+                                <th>Description</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Home 1</td>
+                                <td>fully furnished 3 bedroom, 2 bathrooms</td>
+                                <td>$1,210</td>
+                            </tr>
+                            <tr>
+                                <td>Home 2</td>
+                                <td>fully furnished 6 bedroom, 5 bathrooms</td>
+                                <td>$3,800</td>
+                            </tr>
+                            <tr>
+                                <td>Home 3</td>
+                                <td>fully furnished 4 bedroom, 3 bathrooms</td>
+                                <td>$1,700</td>
+                            </tr>
+                            <tr>
+                                <td>Home 4</td>
+                                <td>fully furnished 4 bedroom, 3 bathrooms</td>
+                                <td>$1,980</td>
+                            </tr>
+                            <tr>
+                                <td>Home 5</td>
+                                <td>fully furnished 2 bedroom, 2 bathrooms</td>
+                                <td>$1,230</td>
+                            </tr>
+                            <tr>
+                                <td>Home 6</td>
+                                <td>fully furnished 3 bedroom, 3 bathrooms</td>
+                                <td>$1,450</td>
+                            </tr>
+                            <tr>
+                                <td>Home 7</td>
+                                <td>fully furnished 2 bedroom, 2 bathrooms</td>
+                                <td>$1,200</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="form">
+            <div class="container">
+                <h2>Want More Info?</h2>
+                <form action="submit_form.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br></br>
+
+                    <label for="service">Select Home:</label>
+                    <select id="service" name="service">
+                        <option value="service1">Home 1</option>
+                        <option value="service2">Home 2</option>
+                        <option value="service3">Home 3</option>
+                        <option value="service4">Home 4</option>
+                        <option value="service5">Home 5</option>
+                        <option value="service6">Home 6</option>
+                        <option value="service7">Home 7</option>
+                    </select>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="1" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Supreme Homes Inc. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
